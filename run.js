@@ -9,7 +9,7 @@ Music.start(client, {
   helpCmd: "help"
 });
 
-client.login("NDg4MzQzMTc3MDY1OTIyNTYw.DncUXg.UMCBUpIBkuB-pHVdvqThI8Dd3SI");
+
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.username}!`);
@@ -17,4 +17,5 @@ client.on('ready', () => {
 
 client.on('ready', () => { client.user.setGame('Little Nightmares') })
  
-client.login('NDg4MzQzMTc3MDY1OTIyNTYw.DncUXg.UMCBUpIBkuB-pHVdvqThI8Dd3SI');
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
